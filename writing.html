@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv=X-UA-Compatible" content="ie=edge">
+
+		<!--favicon-->
+<link rel="icon" href="logofavicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="logofavicon.ico" type="image/x-icon" />
+
+		<!-- Link to CSS stylesheet-->
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- link to fontawesome icon repository-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<title> RLHJones.com</title>
+	</head>
+
+
+<!-- hamburger menu button-->
+  <nav class="navbar">
+    <span class="open-slide">
+      <a style="cursor: pointer;" class="menu-toggle" id="menu-toggle" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+    <!-- side menu -->
+	<div id="side-menu" class="side-nav">
+		<a style="cursor: pointer;" class="btn-close" onclick="closeSlideMenu()" data-options="scrolltop:false">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="index.html#about">About</a>
+		<a href="writing.html" target="_blank">Writing</a>
+		<a href="http://rlhjones.com/cv/Rob%20Jones%20CV%2020112018.pdf">Resume</a>
+	</div>
+
+	<!-- Javascript for menu functionality-->
+	  <script>
+		function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+    }
+	</script>
+	
+	<script>
+	
+	$(document).ready(function() {
+    $(".menu-toggle").click(function(e) {
+        $(".side-nav").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.side-nav, .side-nav *')) {
+            $(".side-nav").hide();
+        }
+    });
+});
+	  </script>
+
+	  <!--showcase main banner image and content-->
+
+ <header class="showcase2">
+    <div class="content">
+      	<img src="RJSquarecut.png" class="logo" id="logoid" alt="RLHJones">
+		<div class="title">
+    Writing
+      </div>
+      <div class="text">
+        View samples of my academic writing below. Please contact me if you'd like examples of a different register
+      </div>
+    </div>
+  </header>
+
+
+  <!-- About -->
+  <section class="about bg-dark">
+    <div class="container grid-5 center">
+
+	   <div>
+          <a href="http://rlhjones.com/writing/socialprotection.pdf" target="_blank">
+		  <i class="fas fa-hands fa-3x"></i></a>
+		  <h3>Social
+		  <br>Protection</h3>
+          <p>How effective are social protection policies and practices in promoting development?
+		  </div>
+
+		<div>
+		<a href="http://rlhjones.com/writing/structuralviolence.pdf" target="_blank">
+		<i class="fas fa-fist-raised fa-3x"></i></a>
+		<h3>Structural
+		<br>Violence</h3>
+		<p>How can we understand structural violence through the context of the Anglophone problem in Cameroon?
+		</div>
+
+	  <div>
+	  <a href="http://rlhjones.com/writing/shelter.pdf" target="_blank">
+	  <i class="fas fa-exchange-alt fa-3x"></i></a>
+	  <h3>Remittances & Shelter</h3>
+		<p>What are the implications of remmittances and economic migration for shelter practitioners?
+		</a></div>
+
+		<div>
+	  <a href="http://rlhjones.com/writing/refugees.pdf" target="_blank">
+	  <i class="fas fa-balance-scale fa-3x"></i></a>
+	  <h3>LGBT
+	  <br>Asylum</h3>
+		<p>Is the discretion argument a legitimate interpretation of the 1951 Refugee Convention?
+		</div>
+
+
+	  <div>
+	  <a href="http://rlhjones.com/writing/dissertation.pdf" target="_blank">
+	  <i class="fas fa-globe-africa fa-3x"></i>
+	  <h3>Knowledge & Localisation</h3>
+		<p>Master's dissertation: Knowledge of national NGOs in protracted conflict for greater localisation
+      </a></div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container grid-4 center">
+
+	      <div>
+        <a href="index.html">
+		<i class="fas fa-house-damage fa-2x"></i></a>
+        <h3>Home</h3>
+	</div>
+
+      <div>
+        <a href="http://linkedin.com/in/rlhjones" target="_blank">
+		<i class="fab fa-linkedin fa-2x"></i></a>
+        <h3>LinkedIn</h3>
+      </div>
+
+      <div>
+        <a href="http://twitter.com/robmagic" target="_blank">
+		<i class="fab fa-twitter-square fa-2x"></i></a>
+        <h3>Twitter</h3>
+      </div>
+
+	  <div>
+      <a href="http://rlhjones.com/cv/Rob%20Jones%20CV%2020112018.pdf" target="_blank">
+	  <i class="fas fa-file fa-2x"></i></a>
+        <h3>Resume</h3>
+	  </div>
+
+	  <div>
+	      <a href="mailto:rob@rlhjones.com">
+	  <i class="fas fa-envelope fa-2x"></i></a>
+	  <h3>Email</h3>
+	  </div>
+
+
+    </div>
+  </section>
+
+  <footer class="center bg-light">
+    <p>rlhjones.com &copy; 2018</p>
+  </footer>

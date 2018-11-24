@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv=X-UA-Compatible" content="ie=edge">
+
+					<!--favicon-->
+					<link rel="icon" href="logofavicon.ico" type="image/png" />
+					<link rel="shortcut icon" href="logofavicon.ico" type="image/ico" />
+
+		<!-- Link to CSS stylesheet-->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- link to fontawesome icon repository-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title> RLHJones.com</title>
+</head>
+
+<!-- navbar code-->
+
+<!-- hamburger menu button-->
+  <nav class="navbar">
+    <span class="open-slide">
+      <a style="cursor: pointer;" class="menu-toggle" id="menu-toggle" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </nav>
+
+  <!-- side menu -->
+	<div id="side-menu" class="side-nav">
+		<a style="cursor: pointer;" class="btn-close" onclick="closeSlideMenu()" data-options="scrolltop:false">&times;</a>
+		<a href="index.html">Home</a>
+		<a href="#about">About</a>
+		<a href="writing.html" target="_blank">Writing</a>
+		<a href="http://rlhjones.com/cv/Rob%20Jones%20CV%2020112018.pdf">Resume</a>
+	</div>
+
+  <script>
+	function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+    }
+	
+	$(document).ready(function() {
+    $("#menu-toggle").click(function(e) {
+        $(".side-nav").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.side-nav, .side-nav *')) {
+            $(".side-nav").hide();
+        }
+    });
+});
+</script>
+
+ <header class="showcase">
+    <div class="content">
+	<img src="RJSquarecut.png" class="logo" id="logoid" alt="RLHJones">
+      <div class="title">
+		Rob Jones
+      </div>
+      <div class="text">
+        An experienced communications and operations professional working in the humanitarian sector
+		</div>
+      </div>
+  </header>
+
+  <body>
+<!-- About -->
+  <section class="about bg-light">
+    <div class="container">
+      <div class="grid-2" id="about">
+        <div class="center">
+		<img src="headshot.png">
+        </div>
+        <div>
+          <p style="text-align:justify"> I'm a recent master's graduate of the Centre for Development and Emergency Practice at Oxford Brookes University. I have seven years professional experience, two of which were based in Nepal and Madagascar and focussed on the international development and humanitarian sectors. I'm a mobile and enthusiastic communications and operations professional looking for my next big challenge with a view to pursuing a career in project and programme management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links and Navigation  -->
+  <section class="services">
+    <div class="container grid-4 center">
+      <div>
+        <a href="http://linkedin.com/in/rlhjones" target="_blank">
+		<i class="fab fa-linkedin fa-3x"></i></a>
+        <h3>LinkedIn</h3>
+        <p>Send me a connection request on LinkedIn to see professional content updates</p>
+      </div>
+
+
+	<div>
+        <a href="http://twitter.com/robmagic" target="_blank">
+		<i class="fab fa-twitter-square fa-3x"></i></a>
+        <h3>Twitter</h3>
+        <p>Follow me on Twitter for daily sector-related commentary, as well as some off topic interests</p>
+    </div>
+
+
+    <div>
+        <a href="writing.html">
+		<i class="fas fa-pen-square fa-3x"></i></a>
+        <h3>Writing Samples</h3>
+        <p>Read recent academic essays submitted for my MA in Development & Emergency Practice</p>
+	</div>
+
+	<div>
+	    <a href="http://rlhjones.com/cv/Rob%20Jones%20CV%2020112018.pdf" target="_blank">
+		<i class="fas fa-scroll fa-3x"></i></a>
+        <h3>Resume</h3>
+        <p>See the full, most recent iteration of my CV for more detailed technical competencies</p>
+	</div>
+
+	<div>
+	    <a href="mailto:rob@rlhjones.com">
+		<i class="fas fa-envelope fa-3x"></i></a>
+        <h3>Email</h3>
+        <p>Drop me an email at <strong>rob@rlhjones.com</strong> and I'll get back to you within 24 hours</p>
+	</div>
+
+    </div>
+  </section></body>
+
+  <footer class="center bg-dark">
+    <p>rlhjones.com &copy; 2018</p>
+  </footer>
