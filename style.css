@@ -196,7 +196,6 @@ a.writinglink {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-    padding: 5rem 1rem;
 
 }
 
@@ -487,9 +486,10 @@ filter:alpha(opacity=100);
     display: all;
   }
 
-  .grid-4,
+
   .grid-2,
-  .grid-5,
+  .grid-3,
+  .grid-4,
   .grid-6{
     grid-template-columns: 1fr;
   }
