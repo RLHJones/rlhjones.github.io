@@ -253,6 +253,10 @@ footer {
 footer p {
   margin: 0;
 }
+.footer-icons {
+    display: flex;
+    justify-content:space-between;
+}
 
 /* Small Screens */
 @media (max-width: 560px) {
