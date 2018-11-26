@@ -447,14 +447,6 @@ i:hover {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-footer {
-  padding: 0.5rem;
-}
-
-footer p {
-  margin: 0;
-}
-
 /* Small Screens */
 @media (max-width: 560px) {
 
