@@ -196,7 +196,7 @@ a.writinglink {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-
+  align-items:center;
 }
 
 .grid-3 {
@@ -213,6 +213,7 @@ a.writinglink {
 .grid-6 {
   display: grid;
   grid-gap: 20px;
+      height:50vh;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -230,6 +231,13 @@ a.writinglink {
   background: #333;
   color: #f4f4f4;
   text-alig: center;
+}
+
+#about {
+  height:100vh;
+  text-align: center;
+  vertical-align: center;
+
 }
 
 .affiliations{
