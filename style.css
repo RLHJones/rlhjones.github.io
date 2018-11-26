@@ -1,7 +1,7 @@
 .navbar{
   background-color:#000;
   overflow:hidden;
-  height:50px;
+  height:60px;
   z-index:2;
   position:fixed;
   top:0;
@@ -13,7 +13,7 @@
   display:block;
   color:#f2f2f2;
   text-align:center;
-  padding:10px 16px;
+  padding:20px 16px;
   text-decoration:none;
   font-size:17px;
 }
@@ -65,7 +65,12 @@
   margin-left:50px;
 }
 
+.home{
+  position:absolute;
+  top:0px;
+  right:0px;
 
+}
 
 @media(max-width:568px){
   .navbar-nav{display:none}
@@ -164,8 +169,8 @@ a.writinglink {
 }
 
 .content .logo {
-  height: 180px;
-  -webkit-animation: spin 800ms linear;
+  height: 120px;
+  -webkit-animation: spin 700ms linear;
 }
 
 
@@ -181,7 +186,7 @@ a.writinglink {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1160px;
   margin: auto;
   overflow: hidden;
   padding: 4rem 1rem;
@@ -194,16 +199,21 @@ a.writinglink {
 
 }
 
-.grid-4 {
+.grid-3 {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-5 {
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(5, 1fr);
+}
+.grid-6 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .center {
@@ -220,6 +230,16 @@ a.writinglink {
   background: #333;
   color: #f4f4f4;
   text-alig: center;
+}
+
+.affiliations{
+opacity:0.8;
+filter:alpha(opacity=80);
+}
+
+.affiliations:hover{
+opacity:1;
+filter:alpha(opacity=100);
 }
 
 .footer-distributed{
@@ -383,15 +403,9 @@ a.writinglink {
 	}
 }
 
-}
-
-i:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
 
 #logoid:hover {
-  animation: shake 0s;
+  animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
 
@@ -474,7 +488,8 @@ i:hover {
 
   .grid-4,
   .grid-2,
-  .grid-5{
+  .grid-5,
+  .grid-6{
     grid-template-columns: 1fr;
   }
 
