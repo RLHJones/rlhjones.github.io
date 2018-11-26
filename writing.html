@@ -52,9 +52,9 @@
       document.getElementById('side-menu').style.width = '0';
     }
 	</script>
-	
+
 	<script>
-	
+
 	$(document).ready(function() {
     $(".menu-toggle").click(function(e) {
         $(".side-nav").toggle();
@@ -168,6 +168,40 @@
     </div>
   </section>
 
-  <footer class="center bg-light">
-    <p>rlhjones.com &copy; 2018</p>
-  </footer>
+	<!-- footer -->
+		<footer class="footer-distributed">
+			<div class="footer-left">
+			<p class="footer-links">
+					<p class="footer-company-name">Rob Jones &copy; 2018</p>
+
+				<div class="footer-icons">
+
+					<a href="http://linkedin.com/in/rlhjones" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>&nbsp &nbsp &nbsp
+					<a href="http://twitter.com/robmagic" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>&nbsp &nbsp &nbsp
+					<a href="http://instagram.com/robmagik" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>&nbsp &nbsp &nbsp
+					<a href="http://facebook.com/rlhjones" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>&nbsp &nbsp &nbsp
+					<a href="http://github.com/rlhjones" target="_blank">	<i class="fab fa-github fa-2x"></i></a>&nbsp &nbsp &nbsp
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Rob</p>
+
+				<form action="https://formspree.io/rob@rlhjones.com" method="post">
+
+					<input type="text" name="name" placeholder="Your name" />
+					<input type="email" name="_replyto" placeholder="Email" />
+					<input type="hidden" name="_subject" value="Website contact" />
+					<textarea name="name" placeholder="Message"></textarea>
+					<input type="text" name="_gotcha" style="display:none" />
+					<button type="submit" value="Send">Send</button>
+
+				</form>
+
+			</div>
+
+		</footer>
+
+		</html>
