@@ -10,6 +10,14 @@
 <link rel="icon" href="logofavicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="logofavicon.ico" type="image/x-icon" />
 
+<!-- animate on scroll-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+	AOS.init();
+</script>
+
 		<!-- Link to CSS stylesheet-->
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,7 +47,7 @@
 		<a style="cursor: pointer;" class="btn-close" onclick="closeSlideMenu()" data-options="scrolltop:false">&times;</a>
 		<a href="index.html">Home</a>
 		<a href="index.html#about">About</a>
-		<a href="writing.html" target="_blank">Writing</a>
+		<a href="writing.html">Writing</a>
 		<a href="http://rlhjones.com/professional/robjonescv2018.pdf">Resume</a>
 	</div>
 
@@ -84,12 +92,15 @@
     </div>
   </header>
 
+	<script>
+		AOS.init();
+	</script>
 
   <!-- About -->
   <section class="about bg-dark">
     <div class="container grid-5 center">
 
-	   <div>
+	   <div data-aos="fade-right">
           <a href="http://rlhjones.com/writing/socialprotection.pdf" target="_blank">
 		  <i class="fas fa-hands fa-3x"></i></a>
 		  <h3>Social
@@ -97,7 +108,7 @@
           <p>How effective are social protection policies and practices in promoting development?
 		  </div>
 
-		<div>
+		<div data-aos="fade-right">
 		<a href="http://rlhjones.com/writing/structuralviolence.pdf" target="_blank">
 		<i class="fas fa-fist-raised fa-3x"></i></a>
 		<h3>Structural
@@ -105,14 +116,14 @@
 		<p>How can we understand structural violence through the context of the Anglophone problem in Cameroon?
 		</div>
 
-	  <div>
+	  <div data-aos="fade-right">
 	  <a href="http://rlhjones.com/writing/shelter.pdf" target="_blank">
 	  <i class="fas fa-exchange-alt fa-3x"></i></a>
 	  <h3>Remittances & Shelter</h3>
 		<p>What are the implications of remmittances and economic migration for shelter practitioners?
 		</a></div>
 
-		<div>
+		<div data-aos="fade-right">
 	  <a href="http://rlhjones.com/writing/refugees.pdf" target="_blank">
 	  <i class="fas fa-balance-scale fa-3x"></i></a>
 	  <h3>LGBT
@@ -121,7 +132,7 @@
 		</div>
 
 
-	  <div>
+	  <div data-aos="fade-right">
 	  <a href="http://rlhjones.com/writing/dissertation.pdf" target="_blank">
 	  <i class="fas fa-globe-africa fa-3x"></i>
 	  <h3>Knowledge & Localisation</h3>
