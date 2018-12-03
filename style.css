@@ -104,6 +104,10 @@ a.writinglink {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
   display: block;
   filter: blur(10px) grayscale(100%) brightness(20%);
   -webkit-filter: blur(10px) grayscale(100%) brightness(20%);
@@ -126,11 +130,11 @@ a.writinglink {
   content: '';
   height: 100vh;
   width: 100%;
-  background-attachment: fixed;
   background-image: url(writing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   display: block;
   filter: blur(10px) grayscale(100%) brightness(50%);
   -webkit-filter: blur(10px) grayscale(100%) brightness(50%);
@@ -187,6 +191,7 @@ a.writinglink {
 }
 
 .container {
+  position: relative;
   max-width: 1160px;
   margin: auto;
   overflow: hidden;
