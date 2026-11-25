@@ -520,3 +520,14 @@ filter:alpha(opacity=100);
     top: 0;
   }
 }
+
+/* Centre the last affiliation logo (10th item) in the middle column of the 3-column grid */
+.affiliations:last-child{
+  grid-column: 2;
+}
+
+@media (max-width: 568px) {
+  .affiliations:last-child{
+    grid-column: auto;
+  }
+}
